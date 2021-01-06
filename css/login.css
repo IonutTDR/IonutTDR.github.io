@@ -1,0 +1,86 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+@keyframes example {
+  0%   {background-color: #169092;}
+  25%  {background-color: #065a60;}
+  50%  {background-color: #043839;}
+  100% {background-color: #169092;}
+}
+
+body{
+	background-color: #006466;
+	animation: example 10s infinite;
+}
+
+/*login box : top/ middle/ bottom*/
+
+.box{
+	font-family: 'Arial';
+	text-align: center;
+	margin:0 auto;
+	margin-top: 50px;
+	background-color: #4d194d;
+	max-width: 400px;
+	height: 500px;
+	color:white;
+	border-radius: 10px;
+	box-shadow: 0 0 60px rgba(77, 25, 77, 0.8);
+}
+
+.box-header{
+	margin-top: 35px;
+	height:70px;
+	width:400px;
+	font-size: 30px;
+	font-weight: bold;
+	float: left;
+}
+
+.box-form{
+	margin-top: 35px;
+	padding-top: 20px;
+}
+
+.box-form input[type=email], input[type=password]{
+	padding-left: 10px;
+	margin-top:30px;
+	width: 300px;
+	height:50px;
+	font-size: 15px;
+	border:0;
+	border-bottom: 3px solid white;
+	outline: none;
+	background-color: #4d194d;
+	transition: 0.4s;
+	color:white;
+}
+
+.box-form input[type=email]::placeholder, input[type=password]::placeholder{
+	color:white;
+	opacity: 0.5;
+}
+.box-form input[type=submit]{
+	margin-top:30px;
+	width: 150px;
+	height: 50px;
+	background-color: #006466;
+	color:white;
+	border:1px solid #006466;
+	border-radius: 10px;
+	transition: 0.4s;
+	font-size:20px;
+	cursor: pointer;
+}
+
+.box-form input[type=email]:focus, input[type=password]:focus{
+	border-bottom: 3px solid #006466;
+}
+
+.box-form input[type=submit]:hover{
+	background-color: white;
+	color:#006466;
+	box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
